@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "dotenv": "^16.4.7",
-    "koa": "^2.15.3"
+    "koa": "^2.15.3",
+    "sequelize": "^6.37.5"
   },
   "jest": {
     "preset": "ts-jest"
