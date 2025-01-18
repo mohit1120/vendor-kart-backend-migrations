@@ -1,0 +1,22 @@
+{
+  "name": "vendor-kart-backend-migrations",
+  "version": "1.0.0",
+  "description": "Repo to manage migrations in db",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index"
+  },
+  "author": "Mohit",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "koa": "^2.15.3"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}

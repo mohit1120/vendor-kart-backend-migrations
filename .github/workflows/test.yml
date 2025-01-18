@@ -1,0 +1,51 @@
+name: migrations tests
+
+on:
+  push:
+    branches: ["main", "dev"]
+  pull_request:
+    branches: ["main", "dev"]
+
+jobs:
+  build:
+    runs-on: ${{matrix.os}}
+
+    strategy:
+      max-parallel: 24
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [18.x]
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Set environment variables
+        run: pwd && ls -la && cp example.env .env
+
+      - name: Intall dependencies
+        run: npm i
+
+      - name: Run Migrations
+        run: npm run migrate && npm run seed
+
+      - name: Run test
+        run: npm run test
