@@ -14,12 +14,6 @@ class Database {
       password: config.database.dbPassword,
       host: config.database.dbHost,
       dialect: "postgres",
-      dialectOptions: {
-        ssl: {
-          require: true,
-          rejectUnauthorized: false,
-        },
-      },
       logging: true,
     };
 
