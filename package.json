@@ -13,8 +13,10 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "commander": "^13.0.0",
     "dotenv": "^16.4.7",
     "koa": "^2.15.3",
+    "pg": "^8.13.1",
     "sequelize": "^6.37.5"
   },
   "jest": {
