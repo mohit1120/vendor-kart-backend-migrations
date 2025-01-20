@@ -1,8 +1,8 @@
 import { Sequelize } from "sequelize";
-import { seeds } from "../seeder";
 import { Database } from "../connection";
 import { Command } from "commander";
 import { config } from "../../config/config";
+import { seeds } from "../seeder";
 
 export function seedCommand(): Command {
   const command = new Command("seed");
