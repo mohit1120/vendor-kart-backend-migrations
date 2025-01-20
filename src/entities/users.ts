@@ -1,16 +1,14 @@
-import { Model, DataType, DataTypes, Sequelize } from "sequelize";
+import { Model, DataTypes } from "sequelize";
 import { Database } from "../connection";
 
 interface User {
-  ID?: Number;
+  ID?: number;
   PID?: string;
   Name?: string;
   Email?: string;
-  Role?: number;
-  IsDeleted?: boolean;
-  CreatedAt?: Date;
-  UpdatedAt?: Date;
-}
+  Mobile?: string;
+  ShippingAddress?: string;
+  BillingAddress?: string;
 
 class Users extends Model<User> {}
 
@@ -21,6 +19,9 @@ try {
       PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "users_pid" },
       Name: { type: DataTypes.STRING(50), allowNull: false, field: "users_name" },
       Email: { type: DataTypes.STRING(50), allowNull: false, field: "users_email" },
+      Mobile: { type: DataTypes.STRING(50), allowNull: false, field: "users_mobile" },
+      ShippingAddress: { type: DataTypes.STRING(255), allowNull: true, field: "shipping_address" },
+      BillingAddress: { type: DataTypes.STRING(255), allowNull: true, field: "billing_address" },
       Role: { type: DataTypes.INTEGER, allowNull: true, defaultValue: 2, field: "users_role" },
       IsDeleted: { type: DataTypes.BOOLEAN, defaultValue: false, field: "is_deleted" },
       CreatedAt: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW, field: "created_at" },

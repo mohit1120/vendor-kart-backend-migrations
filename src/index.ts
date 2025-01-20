@@ -1,10 +1,12 @@
+
 import Koa from "koa"
+import { config } from "../config/config";
 import { Command } from "commander";
 import { seedCommand } from "./commands/seed";
 import { migrateCommand } from "./commands/migrate";
 import { dropCommand } from "./commands/drop_tables";
-import { config } from "../config/config";
 
+async function Main() {
 const Main = () => {
     try {
         // Create a new Commander program
