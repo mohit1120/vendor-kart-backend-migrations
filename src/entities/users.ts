@@ -9,6 +9,9 @@ interface User {
   Mobile?: string;
   ShippingAddress?: string;
   BillingAddress?: string;
+  CreatedAt?: Date;
+  UpdatedAt?: Date;
+}
 
 class Users extends Model<User> {}
 
@@ -22,8 +25,6 @@ try {
       Mobile: { type: DataTypes.STRING(50), allowNull: false, field: "users_mobile" },
       ShippingAddress: { type: DataTypes.STRING(255), allowNull: true, field: "shipping_address" },
       BillingAddress: { type: DataTypes.STRING(255), allowNull: true, field: "billing_address" },
-      Role: { type: DataTypes.INTEGER, allowNull: true, defaultValue: 2, field: "users_role" },
-      IsDeleted: { type: DataTypes.BOOLEAN, defaultValue: false, field: "is_deleted" },
       CreatedAt: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW, field: "created_at" },
       UpdatedAt: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW, field: "updated_at" },
     },
