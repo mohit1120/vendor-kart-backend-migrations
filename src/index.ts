@@ -6,7 +6,6 @@ import { seedCommand } from "./commands/seed";
 import { migrateCommand } from "./commands/migrate";
 import { dropCommand } from "./commands/drop_tables";
 
-async function Main() {
 const Main = () => {
     try {
         // Create a new Commander program
@@ -35,4 +34,4 @@ const Main = () => {
       }
 };
 
-Main();
+Main()
