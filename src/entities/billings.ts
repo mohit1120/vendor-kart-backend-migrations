@@ -17,7 +17,7 @@ try {
   Billings.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "billings_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "billings_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "billings_pid" },
       Amount: { type: DataTypes.STRING(50), allowNull: false, field: "amount" },
       ShipmentID: { type: DataTypes.STRING(50), allowNull: false, field: "shipment_id" },
       Status: { type: DataTypes.STRING(20), allowNull: false, field: "status" },

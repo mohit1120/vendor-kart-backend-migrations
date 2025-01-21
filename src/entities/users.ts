@@ -19,7 +19,7 @@ try {
   Users.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "users_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "users_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "users_pid" },
       Name: { type: DataTypes.STRING(50), allowNull: false, field: "users_name" },
       Email: { type: DataTypes.STRING(50), allowNull: false, field: "users_email" },
       Mobile: { type: DataTypes.STRING(50), allowNull: false, field: "users_mobile" },

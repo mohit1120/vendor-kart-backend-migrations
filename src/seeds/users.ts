@@ -4,7 +4,7 @@ async function seedUsers() {
   try {
     await Users.bulkCreate([
       {
-        PID: "users_1659a988-3181-48c3-887c-67c9c244e446",
+        PID: "user_1659a988-3181-48c3-887c-67c9c244e446",
         Name: "Anuj",
         Email: "anuj@gmail.com",
         Mobile: "7356432321",
@@ -14,7 +14,7 @@ async function seedUsers() {
         UpdatedAt: new Date(),
       },
       {
-        PID: "users_1659a988-3181-48c3-887c-67c9c244e876",
+        PID: "user_1659a988-3181-48c3-887c-67c9c244e876",
         Name: "Sumit",
         Email: "sumit@gmail.com",
         Mobile: "7356409321",
@@ -24,7 +24,7 @@ async function seedUsers() {
         UpdatedAt: new Date(),
       },
       {
-        PID: "users_1659a988-3000-48c3-887c-67c9c244e321",
+        PID: "user_1659a988-3000-48c3-887c-67c9c244e321",
         Name: "Ajay",
         Email: "ajay@gmail.com",
         Mobile: "7354532321",
@@ -34,7 +34,7 @@ async function seedUsers() {
         UpdatedAt: new Date(),
       },
       {
-        PID: "users_1659a988-3111-48c3-887c-67c9c244e123",
+        PID: "user_1659a988-3111-48c3-887c-67c9c244e123",
         Name: "Avani",
         Email: "avani@gmail.com",
         Mobile: "7356400221",

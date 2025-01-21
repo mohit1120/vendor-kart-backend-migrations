@@ -28,7 +28,7 @@ try {
         field: "shipments_id" 
       },
       shipment_pid: { 
-        type: DataTypes.STRING(50), 
+        type: DataTypes.STRING(100), 
         allowNull: false, 
         unique: true, 
         field: "shipments_pid" 
