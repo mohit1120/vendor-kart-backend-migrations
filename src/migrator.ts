@@ -9,6 +9,7 @@ import { Vendors } from "./entities/vendors";
 import { Categories } from "./entities/categories"; 
 import { Products } from "./entities/products";     
 import { Carts } from "./entities/carts";  
+import { RequestResponseLogs } from "./entities/request_response_logs";
 
 // Define the migration objects
 const migrations = [
@@ -89,6 +90,13 @@ const migrations = [
       console.log('Cart table migrated successfully.');
     },
   },
+  // {
+  //   tableName: RequestResponseLogs.tableName,
+  //   run: async () => {
+  //     await RequestResponseLogs.sync();
+  //     console.log('RequestResponseLogs table migrated successfully.');
+  //   },
+  // },
 ];
 
 export { migrations };

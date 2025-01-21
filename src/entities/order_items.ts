@@ -20,7 +20,7 @@ try {
   OrderItems.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "order_items_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "order_items_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "order_items_pid" },
       OrderID: { type: DataTypes.STRING(50), allowNull: false, field: "order_id" },
       ProductID: { type: DataTypes.STRING(50), allowNull: false, field: "product_id" },
       Price: { type: DataTypes.DECIMAL(10, 2), allowNull: false, field: "price" },

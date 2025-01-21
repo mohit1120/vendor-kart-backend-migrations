@@ -19,6 +19,8 @@ import { seedCartLineItems } from "./seeds/cart_line_items";
 import { seedVendors } from "./seeds/vendors";
 import { seedCategories } from "./seeds/categories";
 import { seedProducts } from "./seeds/products";
+import { Carts } from "./entities/carts";
+import { seedCarts } from "./seeds/carts";
 
 // Define the seed objects
 const seeds = [
@@ -62,6 +64,12 @@ const seeds = [
     tableName: CartLineItems.tableName,
     run: async () => {
       await seedCartLineItems();
+    },
+  },
+  {
+    tableName: Carts.tableName,
+    run: async () => {
+      await seedCarts();
     },
   },
   {

@@ -20,7 +20,7 @@ try {
   Products.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "products_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "products_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "products_pid" },
       CategoryID: { type: DataTypes.STRING(50), allowNull: false, field: "category_id" },
       Name: { type: DataTypes.STRING(100), allowNull: false, field: "name" },
       Description: { type: DataTypes.STRING(255), allowNull: true, field: "description" },

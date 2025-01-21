@@ -16,7 +16,7 @@ try {
   Categories.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "categories_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "categories_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "categories_pid" },
       Name: { type: DataTypes.STRING(100), allowNull: false, field: "name" },
       Description: { type: DataTypes.STRING(255), allowNull: true, field: "description" },
       CreatedAt: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW, field: "created_at" },
