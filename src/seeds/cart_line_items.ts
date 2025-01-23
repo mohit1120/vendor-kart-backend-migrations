@@ -9,7 +9,7 @@ async function seedCartLineItems() {
         UserID: "user_1659a988-3181-48c3-887c-67c9c244e446", 
         ProductID: "product_1659a988-3181-48c3-887c-67c9c244p001", 
         Price: 1200.00,
-        Quantity: 1, 
+        Qty: 1, 
         CreatedAt: new Date(), 
         UpdatedAt: new Date() 
       },
@@ -19,7 +19,7 @@ async function seedCartLineItems() {
         UserID: "user_1659a988-3181-48c3-887c-67c9c244e446", 
         ProductID: "product_1659a988-3181-48c3-887c-67c9c244p003", 
         Price: 31.98,
-        Quantity: 2, 
+        Qty: 2, 
         CreatedAt: new Date(), 
         UpdatedAt: new Date() 
       },
@@ -30,7 +30,7 @@ async function seedCartLineItems() {
         UserID: "user_1659a988-3181-48c3-887c-67c9c244e876", 
         ProductID: "product_1659a988-3181-48c3-887c-67c9c244p004", 
         Price: 35.00,
-        Quantity: 1, 
+        Qty: 1,
         CreatedAt: new Date(), 
         UpdatedAt: new Date() 
       },
@@ -41,7 +41,7 @@ async function seedCartLineItems() {
         UserID: "user_1659a988-3000-48c3-887c-67c9c244e321", 
         ProductID: "product_1659a988-3181-48c3-887c-67c9c244p005", 
         Price: 99.99,
-        Quantity: 1, 
+        Qty: 1, 
         CreatedAt: new Date(), 
         UpdatedAt: new Date() 
       },
@@ -51,7 +51,7 @@ async function seedCartLineItems() {
         UserID: "user_1659a988-3000-48c3-887c-67c9c244e321", 
         ProductID: "product_1659a988-3181-48c3-887c-67c9c244p007", 
         Price: 29.97,
-        Quantity: 3, 
+        Qty: 3, 
         CreatedAt: new Date(), 
         UpdatedAt: new Date() 
       },
@@ -62,7 +62,7 @@ async function seedCartLineItems() {
         UserID: "user_1659a988-3111-48c3-887c-67c9c244e123", 
         ProductID: "product_1659a988-3181-48c3-887c-67c9c244p006",
         Price: 99.98, 
-        Quantity: 2, 
+        Qty: 2, 
         CreatedAt: new Date(), 
         UpdatedAt: new Date() 
       },
