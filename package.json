@@ -4,7 +4,10 @@
   "description": "Repo to manage migrations in db",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index"
+    "start": "ts-node src/index",
+    "seed": "ts-node src/index seed",
+    "migrate": "ts-node src/index migrate",
+    "droptables": "ts-node src/index droptables"
   },
   "author": "Mohit",
   "license": "ISC",
