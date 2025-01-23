@@ -20,7 +20,7 @@ try {
   Vendors.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "vendors_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "vendors_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "vendors_pid" },
       Name: { type: DataTypes.STRING(100), allowNull: false, field: "name" },
       Email: { type: DataTypes.STRING(100), allowNull: true, field: "email" },
       Mobile: { type: DataTypes.STRING(20), allowNull: true, field: "mobile" },

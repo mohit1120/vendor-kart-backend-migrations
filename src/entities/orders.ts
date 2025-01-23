@@ -17,7 +17,7 @@ try {
   Orders.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "orders_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "orders_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "orders_pid" },
       UserID: { type: DataTypes.STRING(50), allowNull: false, field: "user_id" },
       TotalAmount: { type: DataTypes.DECIMAL(10, 2), allowNull: false, field: "total_amount" },
       Status: { type: DataTypes.STRING(50), allowNull: false, defaultValue: "Pending", field: "status" },

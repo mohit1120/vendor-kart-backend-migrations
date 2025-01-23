@@ -4,7 +4,7 @@ async function seedBillings() {
   try {
     await Billings.bulkCreate([
       {
-        PID: "billings_1659a988-3181-48c3-887c-67c9c244b001", 
+        PID: "billing_1659a988-3181-48c3-887c-67c9c244b001", 
         Amount: "2400.00", 
         ShipmentID: "shipment_1659a988-3181-48c3-887c-67c9c244s001",  
         Status: "Paid",  
@@ -12,7 +12,7 @@ async function seedBillings() {
         UpdatedAt: new Date(),
       },
       {
-        PID: "billings_1659a988-3181-48c3-887c-67c9c244b002",  
+        PID: "billing_1659a988-3181-48c3-887c-67c9c244b002",  
         Amount: "800.00",  
         ShipmentID: "shipment_1659a988-3181-48c3-887c-67c9c244s002", 
         Status: "Pending",  
@@ -20,7 +20,7 @@ async function seedBillings() {
         UpdatedAt: new Date(),
       },
       {
-        PID: "billings_1659a988-3000-48c3-887c-67c9c244b003", 
+        PID: "billing_1659a988-3000-48c3-887c-67c9c244b003", 
         Amount: "79.95",  
         ShipmentID: "shipment_1659a988-3000-48c3-887c-67c9c244s003",  
         Status: "Failed",  
@@ -28,7 +28,7 @@ async function seedBillings() {
         UpdatedAt: new Date(),
       },
       {
-        PID: "billings_1659a988-3111-48c3-887c-67c9c244b004", 
+        PID: "billing_1659a988-3111-48c3-887c-67c9c244b004", 
         Amount: "105.00",  
         ShipmentID: "shipment_1659a988-3111-48c3-887c-67c9c244s004", 
         Status: "Paid",  

@@ -17,7 +17,7 @@ try {
   Payments.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "payments_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "payments_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "payments_pid" },
       Amount: { type: DataTypes.STRING(50), allowNull: false, field: "amount" },
       OrderID: { type: DataTypes.STRING(50), allowNull: false, field: "order_id" },
       Status: { type: DataTypes.STRING(20), allowNull: false, field: "status" },

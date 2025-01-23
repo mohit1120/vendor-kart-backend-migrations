@@ -19,7 +19,7 @@ try {
   CartLineItems.init(
     {
       ID: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true, field: "cart_items_id" },
-      PID: { type: DataTypes.STRING(50), allowNull: false, unique: true, field: "cart_items_pid" },
+      PID: { type: DataTypes.STRING(100), allowNull: false, unique: true, field: "cart_items_pid" },
       UserID: { type: DataTypes.STRING(50), allowNull: false, field: "user_id" },
       CartID: { type: DataTypes.STRING(50), allowNull: false, field: "cart_id" },
       ProductID: { type: DataTypes.STRING(50), allowNull: false, field: "product_id" },
