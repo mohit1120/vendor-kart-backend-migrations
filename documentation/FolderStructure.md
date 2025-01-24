@@ -6,7 +6,6 @@
 | .github                          | GitHub configuration directory                          |
 | ├── workflows                    | Directory for GitHub Actions workflows                  |
 | │   └── test.yml                 | GitHub Actions workflow for testing                     |
-| .husky                           | Husky Git hooks directory                               |
 | .vscode                          | Visual Studio Code configuration directory              |
 | │   └── settings.json            | Visual Studio Code settings                             |
 | documentation                    | Documentation directory                                 |
